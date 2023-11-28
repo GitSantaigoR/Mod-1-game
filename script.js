@@ -175,8 +175,8 @@ function startGame() {
 
 function createObstacle() {
     const obstacleContainer = document.getElementById('gameScreen');
-    const obstacleImageSrc1 = '/k2.png';
-    const obstacleImageSrc2 = '/R.png';
+    const obstacleImageSrc1 = './k2.png';
+    const obstacleImageSrc2 = './R.png';
 
     const obstacleWidth1 = 160;
     const obstacleHeight1 = 250;
