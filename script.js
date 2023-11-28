@@ -37,8 +37,8 @@ gameScreen.appendChild(timerDisplay)
 function startGame() {
     const playerWidth = 153;
     const playerHeight = 289;
-    const audioSrc = '/engine_heavy_loop.wav';
-    const secondaryAudio = '/cannon_fire.ogg';
+    const audioSrc = './engine_heavy_loop.wav';
+    const secondaryAudio = './cannon_fire.ogg';
 
     const player = new Player(gameScreen, 800, 550, playerWidth, playerHeight, 'tank2.png', audioSrc, secondaryAudio);
 
@@ -51,7 +51,7 @@ function startGame() {
 
 
     function playCollisionSound() {
-        const collisionSound = new Audio('/cannon_hit_ship_short.ogg'); 
+        const collisionSound = new Audio('./cannon_hit_ship_short.ogg'); 
         collisionSound.play();
     }
 
@@ -74,7 +74,7 @@ function startGame() {
 
                     player.bulletArr.splice(bulletIndex, 1);
 
-                    const newImageSrc = '/footagecrate-simpleexplosion2@3X.png'; // Replace with the path to your new image
+                    const newImageSrc = './footagecrate-simpleexplosion2@3X.png'; // Replace with the path to your new image
                     enemy.changeImage(newImageSrc);
 
                     setTimeout(() => {
